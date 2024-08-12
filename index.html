@@ -1,0 +1,42 @@
+<!-- parte visual de la pagina -->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>JS Game</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="container__contenido">
+            <div class="container__informaciones">
+                <div class="container__texto">
+                    <h1></h1>
+                    <p class="texto__parrafo"></p>
+                </div>
+                <input type="number" id="valorUsuario" min="1" max="10" class="container__input">
+                <div class="chute container__botones">
+                    <button onclick= "verificarIntento();" class="container__boton">Intentar</button> <!-- todos los eventos inician con la palabra "on" que traduce 'en' o 'cuando' onclick es un evento cuando doy click sale la accion 
+                    que le doy pero no es recomendable colocar hay todo el codigo sino que se utiliza funcion  que es un bloque de codigo que realiza la tarea, en html se ejecuta la funcion
+                    en html si se trabaja con comilla doble  -->
+                    <button onclick="reiniciarJuego();" class="container__boton" id="reiniciar" disabled>Nuevo juego</button>
+                </div>
+            </div>
+            <img src="./img/ia.png" alt="Una persona mirando a la izquierda" class="container__imagen-persona" />
+        </div>
+    </div>
+
+    <script src="app.js"></script> <!-- conexion entre el archivo html y archivo javascript .js  -->
+</body>
+
+</html>
+<!-- document object model=El significado del Modelo de Objeto de Documento en JavaScript css= estilo es la parte visual colores
+HTML= Estructura, etiquetas y  javascript es la parte interactiva y funcional del sistema-->
